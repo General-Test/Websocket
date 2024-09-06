@@ -47,9 +47,9 @@ public class SecureWebSocketServer extends WebSocketServer {
 
     public static void main(String[] args) throws Exception {
         int port = 8443; // Replace with your desired port
-        String keystorePath = "cert/server/server.p12";
+        String keystorePath = "src/main/java/org/christu/secure/websocket/cert/server.p12";
         String keystorePassword = "qwerty";
-        String truststorePath = "cert/ca/ca-cert.pem";
+        String truststorePath = "src/main/java/org/christu/secure/websocket/cert/ca-cert.pem";
 
 
         SSLContext sslContext = SSLContextHelper.createSSLContextServer(keystorePath, keystorePassword, truststorePath);
